@@ -35,18 +35,20 @@ The tool provides a CLI interface for encrypting and decrypting directories. Bel
 - Encrypt a Directory:
 
     To encrypt all files in a directory:
-        ```bash
-        protect-my-dir --directory /path/to/directory --encrypt
-        ```
+
+    ```bash
+    protect-my-dir --directory /path/to/directory --encrypt
+    ```
 
     You will be prompted to enter a password. The tool will encrypt all files in the directory and remove the original files.
 
 - Decrypt a Directory:
 
     To decrypt all files in a directory:
-        ```bash
-        protect-my-dir --directory /path/to/directory --decrypt
-        ```
+
+    ```bash
+    protect-my-dir --directory /path/to/directory --decrypt
+    ```
 
     You will be prompted to enter the password used for encryption. The tool will decrypt all files in the directory and restore them to their original state.
 

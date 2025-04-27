@@ -1,30 +1,53 @@
-<!--
-> We're eager to add your tutorial to this repository as soon as possible, but we need all samples to follow the same structure.
-> _(DELETE THIS PARAGRAPH AFTER READING)_
--->
+# Purpose
 
-|        Q        |                    A                    |
-| --------------- | --------------------------------------- |
-| Bug fix?        | no - yes?                               |
-| New feature?    | no - yes?                               |
-| New tutorial?   | no - yes?                               |
-| Related issues? | fixes #X, partially #Y, mentioned in #Z |
+<!-- Describe the intention of the changes being proposed. What problem does it solve or functionality does it add? -->
+* ...
 
-## What's in this Pull Request?
+## Does this introduce a breaking change?
+<!-- Mark one with an "x". -->
 
-<!--
-> Please describe the changes in this PR. Sample description or details around bugs that are being fixed.
->
-> _(DELETE THIS PARAGRAPH AFTER READING)_
--->
+```md
+- [ ] Yes
+- [ ] No
+```
 
-<!--
-## Submitter Guidance (DELETE AFTER READING)
->
-> *Please update this PR information accordingly.*
->
-> *Pull requests that do not follow this template will be automatically rejected.*
->
-> *Please target your PR to the `main` branch.*
-> _(DELETE THIS SECTION AFTER READING)_
--->
+## Pull Request Type
+
+What kind of change does this Pull Request introduce?
+
+<!-- Please check the one that applies to this PR using "x". -->
+
+```md
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Code style update (formatting, local variables)
+- [ ] Refactoring (no functional changes, no api changes)
+- [ ] Documentation content changes
+- [ ] Other... Please describe:
+```
+
+## How to Test
+
+* Get the code
+
+```bash
+git clone [repo-address]
+cd [repo-name]
+git checkout [branch-name]
+npm install
+```
+
+* Test the code
+<!-- Add steps to run the tests suite and/or manually test -->
+
+```bash
+```
+
+## What to Check
+
+Verify that the following are valid
+
+* ...
+
+## Other Information
+<!-- Add any other helpful information that may be needed here. -->
