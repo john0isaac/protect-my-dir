@@ -1,0 +1,64 @@
+[project]
+name = "protect-my-dir"
+version = "0.1.0"
+description = "Simple python project to encrypt files and require a password to access them."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1.8",
+    "cryptography>=44.0.2",
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "mypy",
+    "types-requests",
+]
+lint = [
+    "ruff"
+]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "pymdown-extensions"
+]
+
+[tool.ruff]
+lint.select = ["E", "F", "I", "UP"]
+line-length = 120
+target-version = "py310"
+src = ["src"]
+lint.isort.known-first-party = ["protect_my_dir"]
+output-format = "full"
+
+[tool.mypy]
+check_untyped_defs = true
+python_version = "3.10"
+exclude = [".venv/*"]
+
+[project.scripts]
+protect-my-dir = "protect_my_dir.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
