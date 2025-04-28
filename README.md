@@ -1,6 +1,6 @@
 # Protect My Dir
 
-A command-line tool designed to encrypt and decrypt files within a directory using a password. It provides a simple and secure way to protect sensitive files using AES encryption.
+A command-line tool designed to encrypt and decrypt files within a directory using a password. It provides a simple and secure way to protect sensitive files using AES encryption .
 
 ## Features
 
