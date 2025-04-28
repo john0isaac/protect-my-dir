@@ -2,7 +2,11 @@
 name = "protect-my-dir"
 version = "0.1.0"
 description = "Simple python project to encrypt files and require a password to access them."
+authors = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
+maintainers = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
+license = {file = "LICENSE"}
 readme = "README.md"
+
 requires-python = ">=3.10"
 dependencies = [
     "click>=8.1.8",
@@ -22,6 +26,15 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Quality Assurance",
 ]
+
+[project.urls]
+Homepage = "https://github.com/john0isaac/protect-my-dir"
+Issues = "https://github.com/john0isaac/protect-my-dir/issues"
+Contributing = "https://github.com/john0isaac/protect-my-dir/pulls"
+Releases = "https://github.com/john0isaac/protect-my-dir/releases"
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.txt", "*.xml", "*.md"]
 
 [project.optional-dependencies]
 dev = [
