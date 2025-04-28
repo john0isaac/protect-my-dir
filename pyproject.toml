@@ -1,6 +1,6 @@
 [project]
 name = "protect-my-dir"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple python project to encrypt files and require a password to access them."
 authors = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
 maintainers = [{ name = "John Aziz", email = "johnaziz269@gmail.com" }]
