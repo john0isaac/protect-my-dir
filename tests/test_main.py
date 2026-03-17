@@ -3,9 +3,7 @@ Tests for the protect_my_dir.main module.
 """
 
 import os
-from pathlib import Path
 
-import pytest
 from click.testing import CliRunner
 
 from protect_my_dir.main import (
@@ -17,7 +15,6 @@ from protect_my_dir.main import (
     main,
     protect,
 )
-
 
 # ---------------------------------------------------------------------------
 # derive_key
