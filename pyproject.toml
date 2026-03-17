@@ -56,6 +56,13 @@ docs = [
     "pymdown-extensions"
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=protect_my_dir --cov-report=term-missing --cov-fail-under=90"
+
+[tool.coverage.run]
+source = ["src/protect_my_dir"]
+
 [tool.ruff]
 lint.select = ["E", "F", "I", "UP"]
 line-length = 120
