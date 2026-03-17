@@ -6,6 +6,9 @@ on:
       - published
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 env:
   DEFAULT_PYTHON: "3.10"
 
